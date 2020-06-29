@@ -64,7 +64,7 @@ nav .navbar li a span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .hero h5 {
@@ -75,14 +75,14 @@ nav .navbar li a span {
 }
 
 .hero h1 {
-  color: #eeeded;
+  color: #ececec;
   font-family: "Montserrat", sans-serif;
   font-size: 4em;
   margin-bottom: 30px;
 }
 
 .hero h1 span {
-  color: #aaa9a9;
+  color: #c2c2c2;
 }
 
 .hero p {
@@ -109,7 +109,7 @@ nav .navbar li a span {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #about .about-info {
@@ -118,7 +118,7 @@ nav .navbar li a span {
 }
 
 #about .about-info h3 {
-  font-size: 2.4em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #ececec;
   margin-bottom: 40px;
@@ -133,6 +133,7 @@ nav .navbar li a span {
   font-size: 1em;
   line-height: 1.5em;
   margin: 20px 0;
+  font-weight: 500;
 }
 
 #about .about-info .about-tech-usage {
@@ -145,11 +146,116 @@ nav .navbar li a span {
 
 #about .about-image {
   width: 50%;
-  text-align: center;
+  text-align: right;
 }
 
 #about .about-image img {
   width: 60%;
+}
+
+#work {
+  padding: 5em 0;
+}
+
+#work h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ececec;
+  margin-bottom: 2em;
+}
+
+#work h3 span {
+  color: #41FBDA;
+  font-family: "Roboto Mono", monospace;
+}
+
+#work .project-wrap {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 7em;
+}
+
+#work .project-wrap .image-project {
+  width: 50%;
+  height: 22em;
+}
+
+#work .project-wrap .image-project img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#work .project-wrap .info-project {
+  position: absolute;
+  right: 0;
+  top: 4em;
+  width: 55%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#work .project-wrap .info-project h5 {
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  color: #ececec;
+}
+
+#work .project-wrap .info-project .desc-project {
+  background: #172A45;
+  font-size: .95em;
+  padding: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+  font-weight: 500;
+  border-radius: .1em;
+}
+
+#work .project-wrap .info-project .tech-use {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Roboto Mono", monospace;
+  font-size: .9em;
+  margin-bottom: 1em;
+  color: #41FBDA;
+}
+
+#work .project-wrap .info-project .tech-use p {
+  margin: 0 1em;
+  font-weight: bold;
+}
+
+#work .project-wrap .info-project .project-source {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#work .project-wrap .info-project .project-source a {
+  color: #c2c2c2;
+  font-size: 1.5em;
+  margin: 0 .5em;
+}
+
+#work .right-image {
+  flex-direction: row-reverse;
+}
+
+#work .right-image .info-project {
+  top: 4em;
+  left: 0;
+  text-align: left;
+}
+
+#work .right-image .info-project .tech-use {
+  justify-content: flex-start;
+}
+
+#work .right-image .info-project .project-source {
+  justify-content: flex-start;
 }
 
 .container {

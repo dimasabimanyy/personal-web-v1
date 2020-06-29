@@ -63,7 +63,7 @@ nav{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 80vh;
+	min-height: 80vh;
 	h5{
 		font-family: $font-unique;
 		color: $secondary-color;
@@ -71,12 +71,12 @@ nav{
 		font-size: 1em;
 	}
 	h1{
-		color: #eeeded;
+		color: $light-font-color;
 		font-family: $font-stack;
 		font-size: 4em;
 		margin-bottom: 30px;
 		span{
-			color: #aaa9a9 ;
+			color: $font-primary-color;
 		}
 	}
 	p{
@@ -107,15 +107,15 @@ nav{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	height: 100vh;
+	min-height: 100vh;
 	.about-info{
 		width: 50%;
 		padding: 0 10px;
 		// background: #000000;
 		h3{
-			font-size: 2.4em;
+			font-size: 1.5em;
 			font-weight: bold;
-			color: #ececec;
+			color: $light-font-color;
 			margin-bottom: 40px;
 			span{
 				color: $secondary-color;
@@ -126,6 +126,7 @@ nav{
 			font-size: 1em;
 			line-height: 1.5em;
 			margin: 20px 0;
+			font-weight: 500;
 		}
 		.about-tech-usage{
 			display: flex;
@@ -136,9 +137,101 @@ nav{
 	}
 	.about-image{
 		width: 50%;
-		text-align: center;
+		text-align: right;
 		img{
 			width: 60%;
+		}
+	}
+	
+}
+
+//Work Showcase
+#work{
+	padding: 5em 0;
+	h3{
+		font-size: 1.5em;
+		font-weight: bold;
+		color: $light-font-color;
+		margin-bottom: 2em;
+		span{
+			color: $secondary-color;
+			font-family: $font-unique;
+		}
+	}
+	.project-wrap{
+		width: 100%;
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
+		margin-bottom: 7em;
+		.image-project{
+			width: 50%;
+			height: 22em;
+			img{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		.info-project{
+			position: absolute;
+			right: 0;
+			top: 4em;
+			// background: maroon;
+			width: 55%;
+			text-align: right;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			h5{
+				font-size: 1.5em;
+				margin-bottom: .5em;
+				color: $light-font-color;
+			}
+			.desc-project{
+				background: #172A45;
+				font-size: .95em;
+				padding: 1.2em;
+				line-height: 1.5em;
+				margin-bottom: 1em;
+				font-weight: 500;
+				border-radius: .1em;
+			}
+			.tech-use{
+				display: flex;
+				justify-content: flex-end;
+				font-family: $font-unique;
+				font-size: .9em;
+				margin-bottom: 1em;
+				color: $secondary-color;
+				p{
+					margin: 0 1em;
+					font-weight: bold;
+				}
+			}
+			.project-source{
+				display: flex;
+				justify-content: flex-end;
+				a{
+					color: $font-primary-color;
+					font-size: 1.5em;
+					margin: 0 .5em;
+				}
+			}
+		}
+	}
+	.right-image{
+		flex-direction: row-reverse;
+		.info-project{
+			top: 4em;
+			left: 0;
+			text-align: left;
+			.tech-use{
+				justify-content: flex-start;
+			}
+			.project-source{
+				justify-content: flex-start;
+			}
 		}
 	}
 	
