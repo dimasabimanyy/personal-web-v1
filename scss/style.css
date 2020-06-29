@@ -100,7 +100,7 @@ nav .navbar li a span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
 }
 
 .hero h5 {
@@ -123,22 +123,9 @@ nav .navbar li a span {
 
 .hero p {
   font-family: "Fira sans", sans-serif;
-  font-size: 1.1em;
-  font-weight: 500;
+  font-size: 1em;
   margin-bottom: 50px;
   line-height: 1.5em;
-}
-
-.hero button {
-  font-family: "Roboto Mono", monospace;
-  width: 200px;
-  padding: 20px 0;
-  font-size: .9em;
-  font-weight: bold;
-  background: transparent;
-  border: 2px solid #41FBDA;
-  color: #41FBDA;
-  cursor: pointer;
 }
 
 #about {
@@ -166,10 +153,9 @@ nav .navbar li a span {
 }
 
 #about .about-info p {
-  font-size: 1em;
+  font-size: .95em;
   line-height: 1.5em;
   margin: 20px 0;
-  font-weight: 500;
 }
 
 #about .about-info .about-tech-usage {
@@ -178,6 +164,12 @@ nav .navbar li a span {
 
 #about .about-info .about-tech-usage ul {
   width: 50%;
+  padding: 1em;
+}
+
+#about .about-info .about-tech-usage ul li {
+  font-family: "Roboto Mono", monospace;
+  font-size: .9em;
 }
 
 #about .about-image {
@@ -244,12 +236,12 @@ nav .navbar li a span {
 
 #work .project-wrap .info-project .desc-project {
   background: #172A45;
-  font-size: .95em;
+  font-family: "Fira sans", sans-serif;
   padding: 1.2em;
-  line-height: 1.5em;
   margin-bottom: 1em;
-  font-weight: 500;
   border-radius: .1em;
+  font-size: .9em;
+  line-height: 1.5em;
 }
 
 #work .project-wrap .info-project .tech-use {
@@ -395,8 +387,95 @@ nav .navbar li a span {
   box-shadow: 2px 9px 25px -2px rgba(0, 0, 0, 0.69);
 }
 
+#contact {
+  text-align: center;
+  padding: 4em 0;
+}
+
+#contact .contact-little-title {
+  font-family: "Roboto Mono", monospace;
+  color: #41FBDA;
+  font-size: 1em;
+  margin-bottom: .8em;
+}
+
+#contact .contact-big-title {
+  color: #d3d3d3;
+  font-size: 3em;
+  margin-bottom: .6em;
+}
+
+#contact .contact-info {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+footer {
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: #a8b2d1;
+  font-size: .9em;
+  padding: 3em;
+}
+
+footer i {
+  animation: fa-beat 3s ease infinite;
+  color: #41FBDA;
+}
+
+@keyframes fa-beat {
+  0% {
+    transform: scale(1);
+  }
+  9% {
+    transform: scale(1.15);
+  }
+  18% {
+    transform: scale(1);
+  }
+  17% {
+    transform: scale(1);
+  }
+  36% {
+    transform: scale(1.15);
+  }
+  45% {
+    transform: scale(1);
+  }
+  54% {
+    transform: scale(1.15);
+  }
+  65% {
+    transform: scale(1);
+  }
+  73% {
+    transform: scale(1.15);
+  }
+  82% {
+    transform: scale(1);
+  }
+  91% {
+    transform: scale(1.15);
+  }
+}
+
 .container {
   width: 75%;
   margin: 0 auto;
+}
+
+.btn-primary {
+  font-family: "Roboto Mono", monospace;
+  padding: 1em 3em;
+  font-size: .9em;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid #41FBDA;
+  color: #41FBDA;
+  cursor: pointer;
+  margin: 4em auto;
+  border-radius: .2em;
 }
 /*# sourceMappingURL=style.css.map */

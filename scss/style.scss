@@ -94,7 +94,8 @@ nav{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	min-height: 80vh;
+	min-height: 100vh;
+	// background-color: maroon;
 	h5{
 		font-family: $font-unique;
 		color: $secondary-color;
@@ -112,24 +113,9 @@ nav{
 	}
 	p{
 		font-family: $font-stack;
-		font-size: 1.1em;
-		font-weight: 500;
+		font-size: 1em;
 		margin-bottom: 50px;
 		line-height: 1.5em;
-	}
-	button{
-		font-family: $font-unique;
-		width: 200px;
-		padding: 20px 0;
-		font-size: .9em;
-		font-weight: bold;
-		background: transparent;
-		border: 2px solid $secondary-color;
-		color: $secondary-color;
-		cursor: pointer;
-	}
-	button:hover{
-
 	}
 }
 
@@ -154,15 +140,19 @@ nav{
 			}
 		}
 		p{
-			font-size: 1em;
+			font-size: .95em;
 			line-height: 1.5em;
 			margin: 20px 0;
-			font-weight: 500;
 		}
 		.about-tech-usage{
 			display: flex;
 			ul{
 				width: 50%;
+				padding: 1em;
+				li{
+					font-family: $font-unique;
+					font-size: .9em;
+				}
 			}
 		}
 	}
@@ -222,12 +212,12 @@ nav{
 			}
 			.desc-project{
 				background: #172A45;
-				font-size: .95em;
+				font-family: $font-stack;
 				padding: 1.2em;
-				line-height: 1.5em;
 				margin-bottom: 1em;
-				font-weight: 500;
 				border-radius: .1em;
+				font-size: .9em;
+				line-height: 1.5em;
 			}
 			.tech-use{
 				display: flex;
@@ -353,6 +343,78 @@ nav{
 			box-shadow: 2px 9px 25px -2px rgba(0,0,0,0.69);
 		}
 	}
+}
+
+// Contact 
+#contact{
+	text-align: center;
+	padding: 4em 0;
+	.contact-little-title{
+		font-family: $font-unique;
+		color: $secondary-color;
+		font-size: 1em;
+		margin-bottom: .8em;
+		
+	}
+	.contact-big-title{
+		color: $light-font-color;
+		font-size: 3em;
+		margin-bottom: .6em;
+	}
+	.contact-info{
+		width: 60%;
+		margin: 0 auto;
+		font-size: 1em;
+		line-height: 1.4em;
+	}
+}
+
+// Footer
+footer{
+	text-align: center;
+	font-family: $font-unique;
+	color: $font-primary-color;
+	font-size: .9em;
+	padding: 3em;
+	i{
+		animation: fa-beat 3s ease infinite;
+		color: $secondary-color;
+	}
+	@keyframes fa-beat {
+		0% {
+		  transform:scale(1);
+		}
+		9% {
+		  transform:scale(1.15);
+		}
+		18% {
+		  transform:scale(1);
+		}
+		17% {
+		  transform:scale(1);
+		}
+		36% {
+		  transform:scale(1.15);
+		}
+		45% {
+		  transform:scale(1);
+		}
+		54% {
+		  transform:scale(1.15);
+		}
+		65% {
+		  transform:scale(1);
+		}
+		73%{
+			transform: scale(1.15);
+		}
+		82%{
+			transform: scale(1);
+		}
+		91%{
+			transform: scale(1.15);
+		}
+	  }
 }
 
 @import 'tablet';
