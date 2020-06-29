@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0A192F;
+  color: #c2c2c2;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1% 5%;
+  align-items: center;
+}
+
+nav .logo {
+  width: 60px;
+  height: 60px;
+}
+
+nav .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+}
+
+nav .navbar li {
+  list-style: none;
+  margin: 0  15px;
+}
+
+nav .navbar li a:hover {
+  color: #41FBDA;
+}
+
+nav .navbar li a {
+  color: #cecece;
+}
+
+nav .navbar li a span {
+  color: #41FBDA;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.hero h5 {
+  font-family: "Roboto Mono", monospace;
+  color: #41FBDA;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.hero h1 {
+  color: #eeeded;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+
+.hero h1 span {
+  color: #aaa9a9;
+}
+
+.hero p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 50px;
+  line-height: 1.5em;
+}
+
+.hero button {
+  font-family: "Roboto Mono", monospace;
+  width: 200px;
+  padding: 20px 0;
+  font-size: .9em;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid #41FBDA;
+  color: #41FBDA;
+  cursor: pointer;
+}
+
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100vh;
+}
+
+#about .about-info {
+  width: 50%;
+  padding: 0 10px;
+}
+
+#about .about-info h3 {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #ececec;
+  margin-bottom: 40px;
+}
+
+#about .about-info h3 span {
+  color: #41FBDA;
+  font-family: "Roboto Mono", monospace;
+}
+
+#about .about-info p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 20px 0;
+}
+
+#about .about-info .about-tech-usage {
+  display: flex;
+}
+
+#about .about-info .about-tech-usage ul {
+  width: 50%;
+}
+
+#about .about-image {
+  width: 50%;
+  text-align: center;
+}
+
+#about .about-image img {
+  width: 60%;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

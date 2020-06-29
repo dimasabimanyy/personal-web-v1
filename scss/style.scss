@@ -1,0 +1,150 @@
+@import 'config';
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: $font-stack;
+	background-color: $primary-color;
+	color: $font-primary-color;
+}
+a{
+	text-decoration: none;
+}
+
+// Navbar
+nav{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 1% 5%;
+	align-items: center;
+
+	.logo{
+			width: 60px;
+			height: 60px;
+			// background-color: black;
+
+			img{
+					width: 100%;
+					height: 100%;
+			}
+	}
+
+	.navbar{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: $font-unique;
+			font-size: 14px;
+
+			li{
+					list-style: none;
+					margin: 0  15px;
+					a:hover{
+						color: $secondary-color;
+					}
+					a{
+						color: #cecece;
+							span{
+									color: $secondary-color;
+							}
+					}
+			}
+	}
+}
+
+// Hero
+.hero{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	h5{
+		font-family: $font-unique;
+		color: $secondary-color;
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	h1{
+		color: #eeeded;
+		font-family: $font-stack;
+		font-size: 4em;
+		margin-bottom: 30px;
+		span{
+			color: #aaa9a9 ;
+		}
+	}
+	p{
+		font-family: $font-stack;
+		font-size: 1.1em;
+		font-weight: 500;
+		margin-bottom: 50px;
+		line-height: 1.5em;
+	}
+	button{
+		font-family: $font-unique;
+		width: 200px;
+		padding: 20px 0;
+		font-size: .9em;
+		font-weight: bold;
+		background: transparent;
+		border: 2px solid $secondary-color;
+		color: $secondary-color;
+		cursor: pointer;
+	}
+	button:hover{
+
+	}
+}
+
+// About
+#about{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 100vh;
+	.about-info{
+		width: 50%;
+		padding: 0 10px;
+		// background: #000000;
+		h3{
+			font-size: 2.4em;
+			font-weight: bold;
+			color: #ececec;
+			margin-bottom: 40px;
+			span{
+				color: $secondary-color;
+				font-family: $font-unique;
+			}
+		}
+		p{
+			font-size: 1em;
+			line-height: 1.5em;
+			margin: 20px 0;
+		}
+		.about-tech-usage{
+			display: flex;
+			ul{
+				width: 50%;
+			}
+		}
+	}
+	.about-image{
+		width: 50%;
+		text-align: center;
+		img{
+			width: 60%;
+		}
+	}
+	
+}
+
+
+@import 'tablet';
+@import 'mobile';
+@import 'utilities';
