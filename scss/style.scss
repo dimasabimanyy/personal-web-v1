@@ -14,6 +14,37 @@ a{
 	text-decoration: none;
 }
 
+//Social Media icon
+.social-media-icon{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	bottom: 0;
+	left: 5%;
+	align-items: center;
+	li{
+		list-style: none;
+		margin: 1em 0;
+		i{
+			font-size: 1.2em;
+			color: $font-primary-color;
+			transition: .3s ease-in;
+		}
+		i:hover{
+			color: $secondary-color;
+			transform: translateY(-.2em);
+		}
+	}
+	.standing-line-left{
+		height: 7em;
+		width: 2px;
+		background-color: $font-primary-color;
+	}
+	.last-icon{
+		margin-bottom: 3em;
+	}
+}
+
 // Navbar
 nav{
 	display: flex;
@@ -165,8 +196,8 @@ nav{
 		flex-wrap: wrap;
 		margin-bottom: 7em;
 		.image-project{
-			width: 50%;
-			height: 22em;
+			width: 55%;
+			min-height: 22em;
 			img{
 				height: 100%;
 				width: 100%;
@@ -176,7 +207,8 @@ nav{
 		.info-project{
 			position: absolute;
 			right: 0;
-			top: 4em;
+			top: 0;
+			height: 100%;
 			// background: maroon;
 			width: 55%;
 			text-align: right;
@@ -223,7 +255,6 @@ nav{
 	.right-image{
 		flex-direction: row-reverse;
 		.info-project{
-			top: 4em;
 			left: 0;
 			text-align: left;
 			.tech-use{
@@ -237,6 +268,92 @@ nav{
 	
 }
 
+// Noteworthy Work Projects
+#noteworthy-project{
+	padding: 5em 0;
+	h4{
+		text-align: center;
+		font-size: 1.5em;
+		margin-bottom: .5em;
+		color: $light-font-color;
+	}
+	h6{
+		text-align: center;
+		margin-bottom: 3em;
+		a{
+			font-size: 1.3em;
+			font-family: $font-unique;
+			color: $secondary-color;
+			font-style: normal;
+			text-decoration: underline;
+		}
+		a:hover{
+			text-decoration: none;
+			color: #4adfc3;
+		}
+	}
+	.project-container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		.project-box{
+			width: 32%;
+			padding: 3em 1.7em;
+			background-color: #172A45;
+			transition: .2s ease-in;
+			margin: 1em 0;
+			.noteworthy-project-link{
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 2em;
+				i{
+					color: $secondary-color;
+					font-size: 2.5em;
+				}
+				.source-icon-wrap{
+					display: flex;
+					i{
+						color: $font-primary-color;
+						font-size: 1.2em;
+						margin-left: .7em;
+					}
+					i:hover{
+						color: $secondary-color
+					}
+				}
+			}
+			.noteworthy-project-title{
+				margin-bottom: 1em;
+				a{
+					font-size: 1.3em;
+					color: $light-font-color;
+					font-weight: 500;
+				}
+			}
+			p{
+				font-size: .9em;
+				line-height: 1.5em;
+				margin-bottom: 3em;
+			}
+			ul{
+				display: inline-flex;
+				li{
+					list-style: none;
+					font-family: $font-unique;
+					color: $darker-font-primary-color;
+					font-size: .8em;
+					margin: 0 .5em;
+				}
+			}
+		}
+		.project-box:hover{
+			transform: translateY(-2%);
+			-webkit-box-shadow: 2px 9px 25px -2px rgba(0,0,0,0.69);
+			-moz-box-shadow: 2px 9px 25px -2px rgba(0,0,0,0.69);
+			box-shadow: 2px 9px 25px -2px rgba(0,0,0,0.69);
+		}
+	}
+}
 
 @import 'tablet';
 @import 'mobile';

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,13 +7,48 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fira sans", sans-serif;
   background-color: #0A192F;
-  color: #c2c2c2;
+  color: #a8b2d1;
 }
 
 a {
   text-decoration: none;
+}
+
+.social-media-icon {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  left: 5%;
+  align-items: center;
+}
+
+.social-media-icon li {
+  list-style: none;
+  margin: 1em 0;
+}
+
+.social-media-icon li i {
+  font-size: 1.2em;
+  color: #a8b2d1;
+  transition: .3s ease-in;
+}
+
+.social-media-icon li i:hover {
+  color: #41FBDA;
+  transform: translateY(-0.2em);
+}
+
+.social-media-icon .standing-line-left {
+  height: 7em;
+  width: 2px;
+  background-color: #a8b2d1;
+}
+
+.social-media-icon .last-icon {
+  margin-bottom: 3em;
 }
 
 nav {
@@ -75,18 +111,18 @@ nav .navbar li a span {
 }
 
 .hero h1 {
-  color: #ececec;
-  font-family: "Montserrat", sans-serif;
+  color: #d3d3d3;
+  font-family: "Fira sans", sans-serif;
   font-size: 4em;
   margin-bottom: 30px;
 }
 
 .hero h1 span {
-  color: #c2c2c2;
+  color: #a8b2d1;
 }
 
 .hero p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fira sans", sans-serif;
   font-size: 1.1em;
   font-weight: 500;
   margin-bottom: 50px;
@@ -120,7 +156,7 @@ nav .navbar li a span {
 #about .about-info h3 {
   font-size: 1.5em;
   font-weight: bold;
-  color: #ececec;
+  color: #d3d3d3;
   margin-bottom: 40px;
 }
 
@@ -160,7 +196,7 @@ nav .navbar li a span {
 #work h3 {
   font-size: 1.5em;
   font-weight: bold;
-  color: #ececec;
+  color: #d3d3d3;
   margin-bottom: 2em;
 }
 
@@ -178,8 +214,8 @@ nav .navbar li a span {
 }
 
 #work .project-wrap .image-project {
-  width: 50%;
-  height: 22em;
+  width: 55%;
+  min-height: 22em;
 }
 
 #work .project-wrap .image-project img {
@@ -191,7 +227,8 @@ nav .navbar li a span {
 #work .project-wrap .info-project {
   position: absolute;
   right: 0;
-  top: 4em;
+  top: 0;
+  height: 100%;
   width: 55%;
   text-align: right;
   display: flex;
@@ -202,7 +239,7 @@ nav .navbar li a span {
 #work .project-wrap .info-project h5 {
   font-size: 1.5em;
   margin-bottom: .5em;
-  color: #ececec;
+  color: #d3d3d3;
 }
 
 #work .project-wrap .info-project .desc-project {
@@ -235,7 +272,7 @@ nav .navbar li a span {
 }
 
 #work .project-wrap .info-project .project-source a {
-  color: #c2c2c2;
+  color: #a8b2d1;
   font-size: 1.5em;
   margin: 0 .5em;
 }
@@ -245,7 +282,6 @@ nav .navbar li a span {
 }
 
 #work .right-image .info-project {
-  top: 4em;
   left: 0;
   text-align: left;
 }
@@ -256,6 +292,107 @@ nav .navbar li a span {
 
 #work .right-image .info-project .project-source {
   justify-content: flex-start;
+}
+
+#noteworthy-project {
+  padding: 5em 0;
+}
+
+#noteworthy-project h4 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: .5em;
+  color: #d3d3d3;
+}
+
+#noteworthy-project h6 {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+#noteworthy-project h6 a {
+  font-size: 1.3em;
+  font-family: "Roboto Mono", monospace;
+  color: #41FBDA;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+#noteworthy-project h6 a:hover {
+  text-decoration: none;
+  color: #4adfc3;
+}
+
+#noteworthy-project .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#noteworthy-project .project-container .project-box {
+  width: 32%;
+  padding: 3em 1.7em;
+  background-color: #172A45;
+  transition: .2s ease-in;
+  margin: 1em 0;
+}
+
+#noteworthy-project .project-container .project-box .noteworthy-project-link {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+#noteworthy-project .project-container .project-box .noteworthy-project-link i {
+  color: #41FBDA;
+  font-size: 2.5em;
+}
+
+#noteworthy-project .project-container .project-box .noteworthy-project-link .source-icon-wrap {
+  display: flex;
+}
+
+#noteworthy-project .project-container .project-box .noteworthy-project-link .source-icon-wrap i {
+  color: #a8b2d1;
+  font-size: 1.2em;
+  margin-left: .7em;
+}
+
+#noteworthy-project .project-container .project-box .noteworthy-project-link .source-icon-wrap i:hover {
+  color: #41FBDA;
+}
+
+#noteworthy-project .project-container .project-box .noteworthy-project-title {
+  margin-bottom: 1em;
+}
+
+#noteworthy-project .project-container .project-box .noteworthy-project-title a {
+  font-size: 1.3em;
+  color: #d3d3d3;
+  font-weight: 500;
+}
+
+#noteworthy-project .project-container .project-box p {
+  font-size: .9em;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+}
+
+#noteworthy-project .project-container .project-box ul {
+  display: inline-flex;
+}
+
+#noteworthy-project .project-container .project-box ul li {
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  color: #7180aa;
+  font-size: .8em;
+  margin: 0 .5em;
+}
+
+#noteworthy-project .project-container .project-box:hover {
+  transform: translateY(-2%);
+  box-shadow: 2px 9px 25px -2px rgba(0, 0, 0, 0.69);
 }
 
 .container {
