@@ -538,6 +538,7 @@ footer i {
   position: relative;
   font-weight: bold;
   transition: .2s;
+  outline: none;
 }
 
 .primary-button:hover {
@@ -589,6 +590,7 @@ footer i {
   color: #41FBDA;
   cursor: pointer;
   border-radius: .2em;
+  outline: none;
 }
 
 .btn-resume a {

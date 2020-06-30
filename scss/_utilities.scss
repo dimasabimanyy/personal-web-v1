@@ -18,6 +18,7 @@
     position: relative;
     font-weight: bold;
     transition: .2s;
+    outline: none;
 }
 .primary-button:hover {
     cursor: pointer;
@@ -28,8 +29,6 @@
     background-color: #10293B;
     
 }
-
-
 .primary-button .round {
     border-radius: 50%;
     background-color: $secondary-color;
@@ -69,10 +68,13 @@
     color: $secondary-color;
     cursor: pointer;
     border-radius: .2em;
+    outline: none;
     a{
         color: $secondary-color;
     }
 }
+
+// Fix little detail
 .float-right{
     float: right;
 }

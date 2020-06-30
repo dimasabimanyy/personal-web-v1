@@ -1,3 +1,4 @@
+// Button Hover Effect
 let button = document.querySelector(".primary-button");
 let item = document.querySelector(".primary-button .round");
 
@@ -31,3 +32,4 @@ button.addEventListener("mouseleave", function() {
   }
   item.style.left = buttonX + "px";
 });
+

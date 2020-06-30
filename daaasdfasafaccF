@@ -1,0 +1,35 @@
+[33mcommit 186f7a2164e95ba6f2fd71947200cb0409533be6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Dimas Abimanyu <dmsabmny@gmail.com>
+Date:   Tue Jun 30 10:38:53 2020 +0700
+
+    fix featured project layout bug and add hover effect to button
+
+[33mcommit 38ec5d44eb211e41a38cf7527227e1c23c4f0e1a[m
+Author: Dimas Abimanyu <dmsabmny@gmail.com>
+Date:   Tue Jun 30 09:28:28 2020 +0700
+
+    Add layout for featured project(youtube channel) layout section
+
+[33mcommit ddb3a666ef64b7c07387eb6dd27a24f95b1b1ee2[m
+Author: Dimas Abimanyu <dmsabmny@gmail.com>
+Date:   Mon Jun 29 23:30:57 2020 +0700
+
+    Add contact and footer desktop
+
+[33mcommit 622acaf6e0e6641e6b1186aec6918bc008eaa9a6[m
+Author: Dimas Abimanyu <dmsabmny@gmail.com>
+Date:   Mon Jun 29 22:41:53 2020 +0700
+
+    Change primary font. Add noteworthy work and noteworthy project layout for desktop
+
+[33mcommit 2da3c4c13ef28be1ccc689ad24cacadb8555289e[m
+Author: Dimas Abimanyu <dmsabmny@gmail.com>
+Date:   Mon Jun 29 17:46:21 2020 +0700
+
+    Work/Projects section layout desktop
+
+[33mcommit 484e306cbce2af3f79d3da6405df66c9ee1b7be0[m
+Author: Dimas Abimanyu <dmsabmny@gmail.com>
+Date:   Mon Jun 29 10:29:06 2020 +0700
+
+    First commit. Nav, hero and about layout
