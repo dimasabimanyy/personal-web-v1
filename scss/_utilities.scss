@@ -14,3 +14,38 @@
     margin: 4em auto;
     border-radius: .2em;
 }
+.btn-resume{
+    font-family: $font-unique;
+    padding: .7em 2.3em;
+    font-size: .9em;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    cursor: pointer;
+    border-radius: .2em;
+    a{
+        color: $secondary-color;
+    }
+}
+.btn-to-youtube{
+    font-family: $font-unique;
+    padding: .6em 1.4em;
+    font-size: .9em;
+    font-weight: 500;
+    background: transparent;
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+    cursor: pointer;
+    margin: 1em 0;
+    border-radius: .2em;
+}
+.float-right{
+    float: right;
+}
+.small{
+    padding: .4em 1.5em;
+}
+.text-right{
+    text-align: right;
+}

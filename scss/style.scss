@@ -5,6 +5,10 @@
 	margin: 0;
 	padding: 0;
 }
+*::selection{
+    background-color: $secondary-color;
+    color: #000000;
+}
 body{
 	font-family: $font-stack;
 	background-color: $primary-color;
@@ -83,6 +87,11 @@ nav{
 									color: $secondary-color;
 							}
 					}
+					button{
+						a{
+							color: $secondary-color
+						}
+					}
 			}
 	}
 }
@@ -106,7 +115,7 @@ nav{
 		color: $light-font-color;
 		font-family: $font-stack;
 		font-size: 4em;
-		margin-bottom: 30px;
+		margin-bottom: .5em;
 		span{
 			color: $font-primary-color;
 		}
@@ -114,7 +123,6 @@ nav{
 	p{
 		font-family: $font-stack;
 		font-size: 1em;
-		margin-bottom: 50px;
 		line-height: 1.5em;
 	}
 }
@@ -130,7 +138,7 @@ nav{
 		padding: 0 10px;
 		// background: #000000;
 		h3{
-			font-size: 1.5em;
+			font-size: 1.8em;
 			font-weight: bold;
 			color: $light-font-color;
 			margin-bottom: 40px;
@@ -159,6 +167,7 @@ nav{
 	.about-image{
 		width: 50%;
 		text-align: right;
+		position: relative;
 		img{
 			width: 60%;
 		}
@@ -168,7 +177,7 @@ nav{
 
 //Work Showcase
 #work{
-	padding: 5em 0;
+	padding: 3em 0;
 	h3{
 		font-size: 1.5em;
 		font-weight: bold;
@@ -217,10 +226,11 @@ nav{
 				margin-bottom: 1em;
 				border-radius: .1em;
 				font-size: .9em;
-				line-height: 1.5em;
+				line-height: 1.6em;
 			}
 			.tech-use{
 				display: flex;
+				flex-wrap: wrap;
 				justify-content: flex-end;
 				font-family: $font-unique;
 				font-size: .9em;
@@ -238,6 +248,9 @@ nav{
 					color: $font-primary-color;
 					font-size: 1.5em;
 					margin: 0 .5em;
+				}
+				a:hover{
+					color: $secondary-color;
 				}
 			}
 		}
@@ -260,7 +273,7 @@ nav{
 
 // Noteworthy Work Projects
 #noteworthy-project{
-	padding: 5em 0;
+	padding: 3em 0;
 	h4{
 		text-align: center;
 		font-size: 1.5em;
@@ -326,7 +339,8 @@ nav{
 				margin-bottom: 3em;
 			}
 			ul{
-				display: inline-flex;
+				display: flex;
+				flex-wrap: wrap;
 				li{
 					list-style: none;
 					font-family: $font-unique;
@@ -344,6 +358,58 @@ nav{
 		}
 	}
 }
+
+// Featured Project
+#featured-project{
+	padding: 4em 0;
+	display: flex;
+	align-items: center;
+	// background-color: maroon;
+	.video-wrapper{
+		width: 50%;
+		iframe{
+			border: none;
+
+		}
+	}
+	.featured-project-info{
+		width: 50%;
+		padding: 1em;
+		.featured-project-title{
+			font-family: $font-unique;
+			text-align: right;
+			font-size: .9em;
+			color: $secondary-color;
+			span{
+				color: $secondary-color;
+			}
+		}
+		h2{
+			color: $light-font-color;
+			font-size: 2em;
+			text-align: right;
+			margin-bottom: 1em;
+		}
+		.youtube-info{
+			font-size: .95em;
+			line-height: 1.5em;
+			// background-color: maroon;
+			.tech-youtube-use{
+				font-family: $font-unique;
+				font-size: .9em;
+				margin-top: 1.5em;
+				margin-bottom: 1.5em;
+			}
+			ul{
+				li{
+					font-size: .9em;
+					font-family: $font-unique;
+				}
+			}
+		}
+	}
+}
+
 
 // Contact 
 #contact{
@@ -365,7 +431,7 @@ nav{
 		width: 60%;
 		margin: 0 auto;
 		font-size: 1em;
-		line-height: 1.4em;
+		line-height: 1.6em;
 	}
 }
 
@@ -384,35 +450,23 @@ footer{
 		0% {
 		  transform:scale(1);
 		}
-		9% {
-		  transform:scale(1.15);
+		15% {
+		  transform:scale(1.10);
 		}
-		18% {
-		  transform:scale(1);
-		}
-		17% {
-		  transform:scale(1);
-		}
-		36% {
-		  transform:scale(1.15);
-		}
-		45% {
-		  transform:scale(1);
-		}
-		54% {
-		  transform:scale(1.15);
-		}
-		65% {
-		  transform:scale(1);
-		}
-		73%{
-			transform: scale(1.15);
-		}
-		82%{
+		30%{
 			transform: scale(1);
 		}
-		91%{
-			transform: scale(1.15);
+		45% {
+		  transform:scale(1.10);
+		}
+		60% {
+		  transform:scale(1);
+		}
+		75% {
+		  transform:scale(1.10);
+		}
+		90%{
+			transform: scale(1);
 		}
 	  }
 }

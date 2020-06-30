@@ -6,6 +6,11 @@
   padding: 0;
 }
 
+*::selection {
+  background-color: #41FBDA;
+  color: #000000;
+}
+
 body {
   font-family: "Fira sans", sans-serif;
   background-color: #0A192F;
@@ -94,6 +99,10 @@ nav .navbar li a span {
   color: #41FBDA;
 }
 
+nav .navbar li button a {
+  color: #41FBDA;
+}
+
 .hero {
   text-align: center;
   display: flex;
@@ -114,7 +123,7 @@ nav .navbar li a span {
   color: #d3d3d3;
   font-family: "Fira sans", sans-serif;
   font-size: 4em;
-  margin-bottom: 30px;
+  margin-bottom: .5em;
 }
 
 .hero h1 span {
@@ -124,7 +133,6 @@ nav .navbar li a span {
 .hero p {
   font-family: "Fira sans", sans-serif;
   font-size: 1em;
-  margin-bottom: 50px;
   line-height: 1.5em;
 }
 
@@ -141,7 +149,7 @@ nav .navbar li a span {
 }
 
 #about .about-info h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: bold;
   color: #d3d3d3;
   margin-bottom: 40px;
@@ -175,6 +183,7 @@ nav .navbar li a span {
 #about .about-image {
   width: 50%;
   text-align: right;
+  position: relative;
 }
 
 #about .about-image img {
@@ -182,7 +191,7 @@ nav .navbar li a span {
 }
 
 #work {
-  padding: 5em 0;
+  padding: 3em 0;
 }
 
 #work h3 {
@@ -241,11 +250,12 @@ nav .navbar li a span {
   margin-bottom: 1em;
   border-radius: .1em;
   font-size: .9em;
-  line-height: 1.5em;
+  line-height: 1.6em;
 }
 
 #work .project-wrap .info-project .tech-use {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   font-family: "Roboto Mono", monospace;
   font-size: .9em;
@@ -269,6 +279,10 @@ nav .navbar li a span {
   margin: 0 .5em;
 }
 
+#work .project-wrap .info-project .project-source a:hover {
+  color: #41FBDA;
+}
+
 #work .right-image {
   flex-direction: row-reverse;
 }
@@ -287,7 +301,7 @@ nav .navbar li a span {
 }
 
 #noteworthy-project {
-  padding: 5em 0;
+  padding: 3em 0;
 }
 
 #noteworthy-project h4 {
@@ -371,7 +385,8 @@ nav .navbar li a span {
 }
 
 #noteworthy-project .project-container .project-box ul {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #noteworthy-project .project-container .project-box ul li {
@@ -385,6 +400,60 @@ nav .navbar li a span {
 #noteworthy-project .project-container .project-box:hover {
   transform: translateY(-2%);
   box-shadow: 2px 9px 25px -2px rgba(0, 0, 0, 0.69);
+}
+
+#featured-project {
+  padding: 4em 0;
+  display: flex;
+  align-items: center;
+}
+
+#featured-project .video-wrapper {
+  width: 50%;
+}
+
+#featured-project .video-wrapper iframe {
+  border: none;
+}
+
+#featured-project .featured-project-info {
+  width: 50%;
+  padding: 1em;
+}
+
+#featured-project .featured-project-info .featured-project-title {
+  font-family: "Roboto Mono", monospace;
+  text-align: right;
+  font-size: .9em;
+  color: #41FBDA;
+}
+
+#featured-project .featured-project-info .featured-project-title span {
+  color: #41FBDA;
+}
+
+#featured-project .featured-project-info h2 {
+  color: #d3d3d3;
+  font-size: 2em;
+  text-align: right;
+  margin-bottom: 1em;
+}
+
+#featured-project .featured-project-info .youtube-info {
+  font-size: .95em;
+  line-height: 1.5em;
+}
+
+#featured-project .featured-project-info .youtube-info .tech-youtube-use {
+  font-family: "Roboto Mono", monospace;
+  font-size: .9em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#featured-project .featured-project-info .youtube-info ul li {
+  font-size: .9em;
+  font-family: "Roboto Mono", monospace;
 }
 
 #contact {
@@ -409,7 +478,7 @@ nav .navbar li a span {
   width: 60%;
   margin: 0 auto;
   font-size: 1em;
-  line-height: 1.4em;
+  line-height: 1.6em;
 }
 
 footer {
@@ -429,35 +498,23 @@ footer i {
   0% {
     transform: scale(1);
   }
-  9% {
-    transform: scale(1.15);
+  15% {
+    transform: scale(1.1);
   }
-  18% {
+  30% {
     transform: scale(1);
-  }
-  17% {
-    transform: scale(1);
-  }
-  36% {
-    transform: scale(1.15);
   }
   45% {
+    transform: scale(1.1);
+  }
+  60% {
     transform: scale(1);
   }
-  54% {
-    transform: scale(1.15);
+  75% {
+    transform: scale(1.1);
   }
-  65% {
+  90% {
     transform: scale(1);
-  }
-  73% {
-    transform: scale(1.15);
-  }
-  82% {
-    transform: scale(1);
-  }
-  91% {
-    transform: scale(1.15);
   }
 }
 
@@ -477,5 +534,46 @@ footer i {
   cursor: pointer;
   margin: 4em auto;
   border-radius: .2em;
+}
+
+.btn-resume {
+  font-family: "Roboto Mono", monospace;
+  padding: .7em 2.3em;
+  font-size: .9em;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid #41FBDA;
+  color: #41FBDA;
+  cursor: pointer;
+  border-radius: .2em;
+}
+
+.btn-resume a {
+  color: #41FBDA;
+}
+
+.btn-to-youtube {
+  font-family: "Roboto Mono", monospace;
+  padding: .6em 1.4em;
+  font-size: .9em;
+  font-weight: 500;
+  background: transparent;
+  border: 2px solid #41FBDA;
+  color: #41FBDA;
+  cursor: pointer;
+  margin: 1em 0;
+  border-radius: .2em;
+}
+
+.float-right {
+  float: right;
+}
+
+.small {
+  padding: .4em 1.5em;
+}
+
+.text-right {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
