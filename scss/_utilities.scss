@@ -2,18 +2,63 @@
     width: 75%;
     margin: 0 auto;
 }
-.btn-primary{
+
+// Button
+.primary-button, .primary-button-hover-2{
     font-family: $font-unique;
     padding: 1em 3em;
     font-size: .9em;
-    font-weight: 500;
     background: transparent;
     border: 2px solid $secondary-color;
     color: $secondary-color;
     cursor: pointer;
     margin: 4em auto;
     border-radius: .2em;
+    overflow: hidden;
+    position: relative;
+    font-weight: bold;
+    transition: .2s;
 }
+.primary-button:hover {
+    cursor: pointer;
+    border: 2px solid $secondary-color;
+    color: #000;
+}
+.primary-button-hover-2:hover, .btn-resume:hover{
+    background-color: #10293B;
+    
+}
+
+
+.primary-button .round {
+    border-radius: 50%;
+    background-color: $secondary-color;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: -1;
+    animation: scale-down 0.9s forwards;
+}
+
+.primary-button.animate .round {
+    animation: scale-up .9s forwards;
+}
+
+@keyframes scale-up {
+    to {
+        transform: scale(600);
+    }
+}
+
+@keyframes scale-down {
+    from {
+        transform: scale(600);
+    }
+    to {
+        ransform: scale(0);
+    }
+}
+
 .btn-resume{
     font-family: $font-unique;
     padding: .7em 2.3em;
@@ -28,24 +73,14 @@
         color: $secondary-color;
     }
 }
-.btn-to-youtube{
-    font-family: $font-unique;
-    padding: .6em 1.4em;
-    font-size: .9em;
-    font-weight: 500;
-    background: transparent;
-    border: 2px solid $secondary-color;
-    color: $secondary-color;
-    cursor: pointer;
-    margin: 1em 0;
-    border-radius: .2em;
-}
 .float-right{
     float: right;
 }
-.small{
-    padding: .4em 1.5em;
+.m-1{
+    margin: 1em;
 }
 .text-right{
     text-align: right;
 }
+
+

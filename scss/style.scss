@@ -361,8 +361,9 @@ nav{
 
 // Featured Project
 #featured-project{
-	padding: 4em 0;
 	display: flex;
+	min-height: 100vh;
+	justify-content: center;
 	align-items: center;
 	// background-color: maroon;
 	.video-wrapper{
