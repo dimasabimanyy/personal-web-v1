@@ -13,6 +13,7 @@ body{
 	font-family: $font-stack;
 	background-color: $primary-color;
 	color: $font-primary-color;
+	overflow-x: hidden;
 }
 a{
 	text-decoration: none;
@@ -208,7 +209,6 @@ nav{
 			right: 0;
 			top: 0;
 			min-height: 100%;
-			// background: maroon;
 			width: 55%;
 			text-align: right;
 			display: flex;

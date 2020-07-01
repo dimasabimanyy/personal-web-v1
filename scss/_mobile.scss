@@ -23,6 +23,27 @@
     }
 
     // About
+    #about{
+        .about-info{
+            width: 100%;
+            margin-bottom: 2em;
+            h3{
+                font-size: 1.6em;
+            }
+            p{
+                font-size: 1em;
+                line-height: 1.5em;
+            }
+        }
+        .about-image{
+            width: 100%;
+            margin-top: 1em;
+            text-align: center;
+            img{
+                width: 70%;
+            }
+        }
+    }
 
     // Work
     #work{
@@ -36,23 +57,22 @@
                 position: relative;
                 text-align: center;
                 padding: 2em;
-                // .shadow-work{
-                //     background: $primary-color;
-                //     width: 100%;
-                //     position: absolute;
-                //     height: 100%;
-                //     left: 0;
-                //     top: 0;
-                //     z-index: -1;
-                //     opacity: .8;
-                // }
                 .desc-project{
                     background: none;
+                    font-size: 1em;
+                    line-height: 1.5em;
                 }
                 .tech-use{
                     width: 100%;
                     justify-content: center;
                     margin-bottom: 0;
+                }
+                .project-source{
+                    justify-content: center;
+                    padding: 1.5em 0;
+                    a{
+                        font-size: 2em;
+                    }
                 }
             }
         }
@@ -63,6 +83,13 @@
         .project-container{
             .project-box{
                 width: 100%;
+                .noteworthy-project-link{
+                    .source-icon-wrap{
+                        i{
+                            font-size: 1.6em;
+                        }
+                    }
+                }
             }
         }
     }
