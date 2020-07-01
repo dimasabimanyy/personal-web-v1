@@ -270,6 +270,10 @@ nav .toggle .line3 {
   width: 60%;
 }
 
+#about .about-image img:hover {
+  opacity: 0;
+}
+
 #work {
   padding: 3em 0;
 }
@@ -619,6 +623,12 @@ footer i {
   }
   .hero h1 {
     font-size: 3em;
+  }
+  #about .about-image img {
+    width: 80%;
+  }
+  #noteworthy-project .project-container .project-box {
+    width: 49%;
   }
 }
 

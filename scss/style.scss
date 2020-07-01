@@ -253,8 +253,10 @@ nav{
 		img{
 			width: 60%;
 		}
+		img:hover{
+			opacity: 0;
+		}
 	}
-	
 }
 
 //Work Showcase

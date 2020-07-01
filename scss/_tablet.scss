@@ -13,6 +13,22 @@
             font-size: 3em;
         }
     }
+    // About
+    #about{
+        .about-image{
+            img{
+                width: 80%;
+            }
+        }
+    }
+    // Noteworthy Projects
+    #noteworthy-project{
+        .project-container{
+            .project-box{
+                width: 49%;
+            }
+        }
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
