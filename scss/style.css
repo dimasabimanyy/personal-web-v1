@@ -161,8 +161,8 @@ nav .navbar li button a {
 }
 
 #about .about-info p {
-  font-size: .95em;
-  line-height: 1.5em;
+  font-size: 1.05em;
+  line-height: 1.6em;
   margin: 20px 0;
 }
 
@@ -229,7 +229,7 @@ nav .navbar li button a {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100%;
+  min-height: 100%;
   width: 55%;
   text-align: right;
   display: flex;
@@ -254,17 +254,21 @@ nav .navbar li button a {
 }
 
 #work .project-wrap .info-project .tech-use {
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  float: right;
   font-family: "Roboto Mono", monospace;
   font-size: .9em;
   margin-bottom: 1em;
   color: #41FBDA;
+  align-self: flex-end;
 }
 
 #work .project-wrap .info-project .tech-use p {
   margin: 0 1em;
+  line-height: 1.7em;
   font-weight: bold;
 }
 
@@ -293,6 +297,8 @@ nav .navbar li button a {
 }
 
 #work .right-image .info-project .tech-use {
+  width: 70%;
+  align-self: flex-start;
   justify-content: flex-start;
 }
 
@@ -407,6 +413,7 @@ nav .navbar li button a {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 #featured-project .video-wrapper {
@@ -426,6 +433,7 @@ nav .navbar li button a {
   font-family: "Roboto Mono", monospace;
   text-align: right;
   font-size: .9em;
+  margin-bottom: 1em;
   color: #41FBDA;
 }
 
@@ -443,13 +451,13 @@ nav .navbar li button a {
 #featured-project .featured-project-info .youtube-info {
   font-size: .95em;
   line-height: 1.5em;
+  text-align: right;
 }
 
 #featured-project .featured-project-info .youtube-info .tech-youtube-use {
   font-family: "Roboto Mono", monospace;
   font-size: .9em;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
+  margin: 2em 0;
 }
 
 #featured-project .featured-project-info .youtube-info ul li {
@@ -480,6 +488,10 @@ nav .navbar li button a {
   margin: 0 auto;
   font-size: 1em;
   line-height: 1.6em;
+}
+
+#contact .social-media-contact {
+  display: none;
 }
 
 footer {
@@ -519,9 +531,179 @@ footer i {
   }
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .social-media-icon {
+    display: none;
+  }
+  .hero {
+    min-height: 100vh;
+  }
+  .hero h1 {
+    font-size: 3.2em;
+  }
+  #about {
+    margin-bottom: 5em;
+  }
+  #about .about-info {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  #about .about-image {
+    width: 100%;
+    text-align: center;
+  }
+  #about .about-image img {
+    width: 40%;
+  }
+  #work {
+    padding-top: 2em;
+  }
+  #work h3 {
+    margin-bottom: 2em;
+    font-size: 1.4em;
+  }
+  #noteworthy-project .project-container .project-box {
+    width: 49%;
+  }
+  #featured-project {
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  #featured-project .video-wrapper {
+    width: 100%;
+  }
+  #featured-project .featured-project-info {
+    padding: 3em;
+    width: 100%;
+  }
+  #featured-project .featured-project-info .featured-project-title {
+    text-align: center;
+  }
+  #featured-project .featured-project-info h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  #featured-project .featured-project-info .youtube-info {
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+  #contact .contact-info {
+    width: 100%;
+  }
+  #contact .social-media-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+  }
+  #contact .social-media-contact li {
+    list-style: none;
+    margin: 0 1em;
+  }
+  #contact .social-media-contact li i {
+    font-size: 2em;
+    color: #a8b2d1;
+    transition: .3s ease-in;
+  }
+  #contact .social-media-contact li i:hover {
+    color: #41FBDA;
+    transform: translateY(-0.2em);
+  }
+  footer {
+    font-size: .8em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 600px) {
+  .social-media-icon {
+    display: none;
+  }
+  .hero {
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .hero h5 {
+    font-size: .9em;
+    font-weight: normal;
+  }
+  .hero h1 {
+    font-size: 3em;
+  }
+  #work .project-wrap {
+    margin-bottom: 3em;
+  }
+  #work .project-wrap .image-project {
+    width: 100%;
+  }
+  #work .project-wrap .info-project {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 2em;
+  }
+  #work .project-wrap .info-project .desc-project {
+    background: none;
+  }
+  #work .project-wrap .info-project .tech-use {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  #noteworthy-project .project-container .project-box {
+    width: 100%;
+  }
+  #featured-project .featured-project-info {
+    padding: 0;
+    margin: 3em 0;
+  }
+  #featured-project .featured-project-info .featured-project-title {
+    text-align: left;
+  }
+  #featured-project .featured-project-info h2 {
+    text-align: left;
+  }
+  #featured-project .featured-project-info .youtube-info {
+    text-align: left;
+  }
+  #contact .social-media-contact {
+    margin-top: 2em;
+  }
+  #contact .social-media-contact li {
+    list-style: none;
+    margin: 0 1em;
+  }
+  #contact .social-media-contact li i {
+    font-size: 1.6em;
+    color: #a8b2d1;
+    transition: .3s ease-in;
+  }
+  #contact .social-media-contact li i:hover {
+    color: #41FBDA;
+    transform: translateY(-0.2em);
+  }
+}
+
 .container {
   width: 75%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 
 .primary-button, .primary-button-hover-2 {

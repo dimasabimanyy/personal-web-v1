@@ -1,0 +1,109 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px){
+
+    // Social media fix icon
+    .social-media-icon{
+        display: none;
+    }
+
+    // Hero
+    .hero{
+        min-height: 100vh;
+        h1{
+            font-size: 3.2em;
+        }
+    }
+
+    // About
+    #about{
+        // background-color: maroon;
+        margin-bottom: 5em;
+        .about-info{
+            width: 100%;
+            margin-bottom: 2em;
+        }
+        .about-image{
+            width: 100%;
+            // background-color: maroon;
+            text-align: center;
+            img{
+                width: 40%;
+            }
+        }
+    }
+
+    // Work
+    #work{
+        padding-top: 2em;
+        h3{
+            margin-bottom: 2em;
+            font-size: 1.4em;
+        }
+
+    }
+
+    // Noteworthy Project
+    #noteworthy-project{
+        .project-container{
+            .project-box{
+                width: 49%;
+            }
+        }
+    }
+
+    // Featured project (youtube)
+    #featured-project{
+        margin-top: 1em;
+        margin-bottom: 3em;
+        .video-wrapper{
+            width: 100%;
+        }
+        .featured-project-info{
+            padding: 3em;
+            width: 100%;
+            .featured-project-title{
+                text-align: center;
+            }
+            h2{
+                font-size: 2em;
+                text-align: center;
+            }
+            .youtube-info{
+                text-align: center;
+                font-size: 1em;
+                line-height: 1.6em;
+            }
+        }
+    }
+
+    // Contact
+    #contact{
+        .contact-info{
+            width: 100%;
+        }
+        .social-media-contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3em;
+            li{
+                list-style: none;
+                margin: 0 1em;
+                i{
+                    font-size: 2em;
+                    color: $font-primary-color;
+                    transition: .3s ease-in;
+                }
+                i:hover{
+                    color: $secondary-color;
+                    transform: translateY(-.2em);
+                }
+            }
+        }
+    }
+
+    // Footer
+    footer{
+        font-size: .8em;
+    }
+}

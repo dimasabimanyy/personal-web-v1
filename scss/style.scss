@@ -148,8 +148,8 @@ nav{
 			}
 		}
 		p{
-			font-size: .95em;
-			line-height: 1.5em;
+			font-size: 1.05em;
+			line-height: 1.6em;
 			margin: 20px 0;
 		}
 		.about-tech-usage{
@@ -207,7 +207,7 @@ nav{
 			position: absolute;
 			right: 0;
 			top: 0;
-			height: 100%;
+			min-height: 100%;
 			// background: maroon;
 			width: 55%;
 			text-align: right;
@@ -229,15 +229,20 @@ nav{
 				line-height: 1.6em;
 			}
 			.tech-use{
+				width: 70%;
 				display: flex;
 				flex-wrap: wrap;
+				// background-color: maroon;
 				justify-content: flex-end;
+				float: right;
 				font-family: $font-unique;
 				font-size: .9em;
 				margin-bottom: 1em;
 				color: $secondary-color;
+				align-self: flex-end;
 				p{
 					margin: 0 1em;
+					line-height: 1.7em;
 					font-weight: bold;
 				}
 			}
@@ -261,6 +266,8 @@ nav{
 			left: 0;
 			text-align: left;
 			.tech-use{
+				width: 70%;
+				align-self: flex-start;
 				justify-content: flex-start;
 			}
 			.project-source{
@@ -365,6 +372,7 @@ nav{
 	min-height: 100vh;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	// background-color: maroon;
 	.video-wrapper{
 		width: 50%;
@@ -380,6 +388,7 @@ nav{
 			font-family: $font-unique;
 			text-align: right;
 			font-size: .9em;
+			margin-bottom: 1em;
 			color: $secondary-color;
 			span{
 				color: $secondary-color;
@@ -394,12 +403,11 @@ nav{
 		.youtube-info{
 			font-size: .95em;
 			line-height: 1.5em;
-			// background-color: maroon;
+			text-align: right;
 			.tech-youtube-use{
 				font-family: $font-unique;
 				font-size: .9em;
-				margin-top: 1.5em;
-				margin-bottom: 1.5em;
+				margin: 2em 0;
 			}
 			ul{
 				li{
@@ -433,6 +441,8 @@ nav{
 		margin: 0 auto;
 		font-size: 1em;
 		line-height: 1.6em;
+	}.social-media-contact{
+		display: none;
 	}
 }
 

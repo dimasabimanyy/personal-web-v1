@@ -1,0 +1,106 @@
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 600px){
+
+    // Social media fix icon
+    .social-media-icon{
+        display: none;
+    }
+
+    // Navbar
+
+    // Hero
+    .hero{
+        text-align: left;
+        justify-content: center;
+        align-items: flex-start;
+        h5{
+            font-size: .9em;
+            font-weight: normal;
+        }
+        h1{
+            font-size: 3em;
+        }
+    }
+
+    // About
+
+    // Work
+    #work{
+        .project-wrap{
+            margin-bottom: 3em;
+            .image-project{
+                width: 100%;
+            }
+            .info-project{
+                width: 100%;
+                position: relative;
+                text-align: center;
+                padding: 2em;
+                // .shadow-work{
+                //     background: $primary-color;
+                //     width: 100%;
+                //     position: absolute;
+                //     height: 100%;
+                //     left: 0;
+                //     top: 0;
+                //     z-index: -1;
+                //     opacity: .8;
+                // }
+                .desc-project{
+                    background: none;
+                }
+                .tech-use{
+                    width: 100%;
+                    justify-content: center;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // Noteworthy Projects
+    #noteworthy-project{
+        .project-container{
+            .project-box{
+                width: 100%;
+            }
+        }
+    }
+    // Featured Projects (Youtube)
+    #featured-project{
+        .featured-project-info{
+            padding: 0;
+            margin: 3em 0;
+            .featured-project-title{
+                text-align: left;
+            }
+            h2{
+                text-align: left;
+            }
+            .youtube-info{
+                text-align: left;
+            }
+        }
+    }
+
+    // Contact
+    #contact{
+        .social-media-contact{
+            margin-top: 2em;
+            li{
+                list-style: none;
+                margin: 0 1em;
+                i{
+                    font-size: 1.6em;
+                    color: $font-primary-color;
+                    transition: .3s ease-in;
+                }
+                i:hover{
+                    color: $secondary-color;
+                    transform: translateY(-.2em);
+                }
+            }
+        }
+    }
+
+}
