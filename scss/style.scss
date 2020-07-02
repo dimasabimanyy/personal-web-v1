@@ -14,6 +14,7 @@ body{
 	background-color: $primary-color;
 	color: $font-primary-color;
 	overflow-x: hidden;
+	position: relative;
 }
 a{
 	text-decoration: none;
@@ -253,10 +254,8 @@ nav{
 		img{
 			width: 60%;
 		}
-		img:hover{
-			opacity: 0;
-		}
 	}
+	
 }
 
 //Work Showcase
@@ -536,6 +535,10 @@ footer{
 	color: $font-primary-color;
 	font-size: .9em;
 	padding: 3em;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+
 	i{
 		animation: fa-beat 3s ease infinite;
 		color: $secondary-color;
@@ -563,6 +566,82 @@ footer{
 			transform: scale(1);
 		}
 	  }
+}
+
+// Archive Section in archive page
+#archive{
+	min-height: 100vh;
+	padding: 5em 0;
+	.archive-title{
+		font-size: 3em;
+		font-weight: bold;
+		color: $light-font-color;
+		margin-bottom: .2em;
+		// background-color: maroon;
+		padding: .5em;
+		.archive-sub-title{
+			font-size: .3em;
+			font-family: $font-unique;
+			color: $secondary-color;
+			font-weight: normal;
+		}
+	}
+	
+	table{
+		width: 100%;
+		text-align: left;
+		th{
+			color: $font-primary-color;
+			font-size: 1.1em;
+			font-weight: 500;
+			// border: 1px solid red;
+			padding: 1.6em 1em;
+		}
+		td{
+			padding: 1em;
+		}
+		.year{
+			color: $secondary-color;
+			font-family: $font-unique;
+		}
+		.archive-project-title{
+			a{
+				color: $light-font-color;
+				font-weight: 700;
+				font-size: 1.1em;
+				line-height: 1.7em;
+			}
+		}
+		.archive-project-title{
+			a:hover{
+				color: $font-primary-color;
+			}
+		}
+		.archive-built-with{
+			ul{
+				display: flex;
+				li{
+					list-style: none;
+					margin-right: 1.2em;
+					font-family: $font-unique;
+					font-size: .9em;
+				}
+			}
+		}
+		.archive-link{
+			a{
+				i{
+					font-size: 1.5em;
+					color: $font-primary-color;
+					margin-right: .5em;
+				}
+				i:hover{
+					color: $secondary-color;
+				}
+			}
+			
+		}
+	}
 }
 
 @import 'tablet';
