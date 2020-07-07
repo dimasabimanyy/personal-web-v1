@@ -490,15 +490,30 @@ nav .toggle .line3 {
 }
 
 #featured-project {
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  padding: 6em 0;
 }
 
 #featured-project .video-wrapper {
-  width: 50%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#featured-project .video-wrapper .featured-project-title {
+  font-family: "Roboto Mono", monospace;
+  font-size: .9em;
+  margin-bottom: 1em;
+  color: #41FBDA;
+}
+
+#featured-project .video-wrapper .featured-project-title span {
+  color: #41FBDA;
+}
+
+#featured-project .video-wrapper h2 {
+  color: #d3d3d3;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 
 #featured-project .video-wrapper iframe {
@@ -506,39 +521,22 @@ nav .toggle .line3 {
 }
 
 #featured-project .featured-project-info {
-  width: 50%;
+  width: 80%;
+  margin: 0 auto;
   padding: 1em;
-}
-
-#featured-project .featured-project-info .featured-project-title {
-  font-family: "Roboto Mono", monospace;
-  text-align: right;
-  font-size: .9em;
-  margin-bottom: 1em;
-  color: #41FBDA;
-}
-
-#featured-project .featured-project-info .featured-project-title span {
-  color: #41FBDA;
-}
-
-#featured-project .featured-project-info h2 {
-  color: #d3d3d3;
-  font-size: 2em;
-  text-align: right;
-  margin-bottom: 1em;
+  text-align: center;
 }
 
 #featured-project .featured-project-info .youtube-info {
-  font-size: .95em;
-  line-height: 1.5em;
-  text-align: right;
+  font-size: 1em;
+  line-height: 1.7em;
 }
 
 #featured-project .featured-project-info .youtube-info .tech-youtube-use {
   font-family: "Roboto Mono", monospace;
-  font-size: .9em;
+  font-size: 1em;
   margin: 2em 0;
+  color: #7180aa;
 }
 
 #featured-project .featured-project-info .youtube-info ul li {
