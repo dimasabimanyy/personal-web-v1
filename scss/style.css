@@ -518,6 +518,8 @@ nav .toggle .line3 {
 
 #featured-project .video-wrapper iframe {
   border: none;
+  width: 80%;
+  height: 450px;
 }
 
 #featured-project .featured-project-info {
@@ -744,26 +746,36 @@ footer i {
   }
   #featured-project {
     margin-top: 1em;
-    margin-bottom: 3em;
+    padding: 4em 0;
   }
   #featured-project .video-wrapper {
     width: 100%;
+    margin-bottom: 1em;
+  }
+  #featured-project .video-wrapper .featured-project-title {
+    text-align: center;
+  }
+  #featured-project .video-wrapper h2 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #featured-project .video-wrapper iframe {
+    width: 100%;
+    height: 300px;
   }
   #featured-project .featured-project-info {
-    padding: 3em;
     width: 100%;
-  }
-  #featured-project .featured-project-info .featured-project-title {
-    text-align: center;
-  }
-  #featured-project .featured-project-info h2 {
-    font-size: 2em;
-    text-align: center;
   }
   #featured-project .featured-project-info .youtube-info {
     text-align: center;
     font-size: 1em;
     line-height: 1.6em;
+  }
+  #featured-project .featured-project-info .youtube-info .see-channel {
+    margin: 0 auto;
+  }
+  #featured-project .featured-project-info .youtube-info .tech-youtube-use {
+    font-size: .9em;
   }
   #contact .contact-info {
     width: 100%;
@@ -865,16 +877,7 @@ footer i {
   }
   #featured-project .featured-project-info {
     padding: 0;
-    margin: 3em 0;
-  }
-  #featured-project .featured-project-info .featured-project-title {
-    text-align: left;
-  }
-  #featured-project .featured-project-info h2 {
-    text-align: left;
-  }
-  #featured-project .featured-project-info .youtube-info {
-    text-align: left;
+    margin: 1em 0;
   }
   #contact .social-media-contact {
     margin-top: 2em;
