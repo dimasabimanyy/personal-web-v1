@@ -16,7 +16,6 @@ body {
   background-color: #0A192F;
   color: #a8b2d1;
   overflow-x: hidden;
-  position: relative;
 }
 
 a {
@@ -81,6 +80,7 @@ nav .nav-links .nav-links-wrap {
   align-items: center;
   justify-content: center;
   font-family: "Roboto Mono", monospace;
+  text-align: center;
   font-size: .9em;
 }
 
@@ -808,6 +808,9 @@ footer i {
 @media only screen and (max-width: 600px) {
   .social-media-icon {
     display: none;
+  }
+  nav .nav-links .nav-links-wrap li {
+    font-size: .9em;
   }
   .hero {
     text-align: left;

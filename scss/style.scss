@@ -14,7 +14,6 @@ body{
 	background-color: $primary-color;
 	color: $font-primary-color;
 	overflow-x: hidden;
-	position: relative;
 }
 a{
 	text-decoration: none;
@@ -75,6 +74,7 @@ nav{
 			align-items: center;
 			justify-content: center;
 			font-family: $font-unique;
+			text-align: center;
 			font-size: .9em;
 			li{
 					list-style: none;
