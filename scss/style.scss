@@ -52,24 +52,29 @@ a{
 
 // Navbar
 nav{
+	position: fixed;
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	padding: 1em 5%;
+	padding: 20px 5%;
 	align-items: center;
-
+	transition: .6s;
+	background-color: $primary-color;
+	z-index: 999;
 	.logo{
-			width: 4em;
-			height: 4em;
-			// background-color: black;
+		position: relative;
+		width: 3.5em;
+		height: 3.5em;
+		// background-color: black;
 
-			img{
-					width: 100%;
-					height: 100%;
-			}
+		img{
+				width: 100%;
+				height: 100%;
+		}
 	}
 	.nav-links{
 		.nav-links-wrap{
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -106,6 +111,12 @@ nav{
 			transition: all 0.3s;
 		}
 	}
+}
+.sticky{
+	padding: 10px 5%;
+    -webkit-box-shadow: 2px 2px 16px -4px rgba(2, 2, 2, 0.63);
+    -moz-box-shadow: 2px 2px 16px -4px rgba(2, 2, 2, 0.63);
+    box-shadow: 2px 2px 16px -4px rgba(2, 2, 2, 0.63);
 }
 // Navigation Responsive in here
 @media screen and (max-width:950px){
@@ -181,12 +192,12 @@ nav{
 
 // Hero
 .hero{
+	position: relative;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	min-height: 100vh;
+	padding-top: 12em;
 	// background-color: maroon;
 	h5{
 		font-family: $font-unique;
@@ -231,8 +242,8 @@ nav{
 			}
 		}
 		p{
-			font-size: 1.05em;
-			line-height: 1.6em;
+			font-size: 16px;
+			line-height: 26px;
 			margin: 20px 0;
 		}
 		.about-tech-usage{
@@ -482,11 +493,12 @@ nav{
 		padding: 1em;
 		text-align: center;
 		.youtube-info{
-			font-size: 1em;
-			line-height: 1.7em;
+			font-size: 16px;
+			line-height: 26px;
 			.tech-youtube-use{
 				font-family: $font-unique;
-				font-size: 1em;
+				font-size: 15px;
+				line-height: 25px;
 				margin: 2em 0;
 				color:$darker-font-primary-color;
 			}

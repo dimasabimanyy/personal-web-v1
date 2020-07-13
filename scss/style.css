@@ -58,16 +58,21 @@ a {
 }
 
 nav {
+  position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 1em 5%;
+  padding: 20px 5%;
   align-items: center;
+  transition: .6s;
+  background-color: #0A192F;
+  z-index: 999;
 }
 
 nav .logo {
-  width: 4em;
-  height: 4em;
+  position: relative;
+  width: 3.5em;
+  height: 3.5em;
 }
 
 nav .logo img {
@@ -76,6 +81,7 @@ nav .logo img {
 }
 
 nav .nav-links .nav-links-wrap {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,6 +121,11 @@ nav .burger div {
   background-color: #41FBDA;
   margin: 5px;
   transition: all 0.3s;
+}
+
+.sticky {
+  padding: 10px 5%;
+  box-shadow: 2px 2px 16px -4px rgba(2, 2, 2, 0.63);
 }
 
 @media screen and (max-width: 950px) {
@@ -185,12 +196,12 @@ nav .toggle .line3 {
 }
 
 .hero {
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
+  padding-top: 12em;
 }
 
 .hero h5 {
@@ -242,8 +253,8 @@ nav .toggle .line3 {
 }
 
 #about .about-info p {
-  font-size: 1.05em;
-  line-height: 1.6em;
+  font-size: 16px;
+  line-height: 26px;
   margin: 20px 0;
 }
 
@@ -530,13 +541,14 @@ nav .toggle .line3 {
 }
 
 #featured-project .featured-project-info .youtube-info {
-  font-size: 1em;
-  line-height: 1.7em;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 #featured-project .featured-project-info .youtube-info .tech-youtube-use {
   font-family: "Roboto Mono", monospace;
-  font-size: 1em;
+  font-size: 15px;
+  line-height: 25px;
   margin: 2em 0;
   color: #7180aa;
 }

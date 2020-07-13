@@ -1,3 +1,10 @@
+// Smooth navigation scroll
+window.addEventListener("scroll", function(){
+  var nav = document.querySelector("nav");
+  nav.classList.toggle("sticky", window.scrollY > 0);
+})
+
+
 // Button Hover Effect
 let button = document.querySelector(".primary-button");
 let item = document.querySelector(".primary-button .round");
