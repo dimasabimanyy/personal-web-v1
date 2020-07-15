@@ -73,6 +73,7 @@ nav .logo {
   position: relative;
   width: 3.5em;
   height: 3.5em;
+  transition: .6s;
 }
 
 nav .logo img {
@@ -283,7 +284,7 @@ nav .toggle .line3 {
 }
 
 #work {
-  padding: 3em 0;
+  padding: 4.5em 0;
 }
 
 #work h3 {

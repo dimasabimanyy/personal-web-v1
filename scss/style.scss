@@ -46,6 +46,7 @@ nav{
 		position: relative;
 		width: 3.5em;
 		height: 3.5em;
+		transition: .6s;
 		// background-color: black;
 
 		img{
@@ -97,7 +98,7 @@ nav{
 	padding: 10px 5%;
     -webkit-box-shadow: 2px 2px 16px -4px rgba(2, 2, 2, 0.63);
     -moz-box-shadow: 2px 2px 16px -4px rgba(2, 2, 2, 0.63);
-    box-shadow: 2px 2px 16px -4px rgba(2, 2, 2, 0.63);
+	box-shadow: 2px 2px 16px -4px rgba(2, 2, 2, 0.63);
 }
 // Navigation Responsive in here
 @media screen and (max-width:950px){
@@ -252,7 +253,7 @@ nav{
 
 //Work Showcase
 #work{
-	padding: 3em 0;
+	padding: 4.5em 0;
 	h3{
 		font-size: 1.5em;
 		font-weight: bold;
