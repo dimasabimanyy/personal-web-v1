@@ -1,24 +1,5 @@
 @import 'config';
 
-*{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-*::selection{
-    background-color: $secondary-color;
-    color: #000000;
-}
-body{
-	font-family: $font-stack;
-	background-color: $primary-color;
-	color: $font-primary-color;
-	overflow-x: hidden;
-}
-a{
-	text-decoration: none;
-}
-
 //Social Media icon
 .social-media-icon{
 	display: flex;

@@ -9,3 +9,22 @@ $secondary-color: #41FBDA;
 $font-primary-color: #a8b2d1; 
 $light-font-color: #d3d3d3;
 $darker-font-primary-color : #7180aa;
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+*::selection{
+    background-color: $secondary-color;
+    color: #000000;
+}
+body{
+	font-family: $font-stack;
+	background-color: $primary-color;
+	color: $font-primary-color;
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+}
