@@ -255,7 +255,7 @@ nav .toggle .line3 {
 
 #about .about-info p {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 24px;
   margin: 20px 0;
 }
 
@@ -342,8 +342,8 @@ nav .toggle .line3 {
   padding: 1.2em;
   margin-bottom: 1em;
   border-radius: .1em;
-  font-size: .9em;
-  line-height: 1.6em;
+  font-size: .95em;
+  line-height: 1.45em;
 }
 
 #work .project-wrap .info-project .tech-use {
@@ -542,8 +542,8 @@ nav .toggle .line3 {
 }
 
 #featured-project .featured-project-info .youtube-info {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 #featured-project .featured-project-info .youtube-info .tech-youtube-use {
@@ -581,7 +581,7 @@ nav .toggle .line3 {
   width: 60%;
   margin: 0 auto;
   font-size: 1em;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 #contact .social-media-contact {
@@ -781,8 +781,6 @@ footer i {
   }
   #featured-project .featured-project-info .youtube-info {
     text-align: center;
-    font-size: 1em;
-    line-height: 1.6em;
   }
   #featured-project .featured-project-info .youtube-info .see-channel {
     margin: 0 auto;

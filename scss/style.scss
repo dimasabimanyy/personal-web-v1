@@ -225,7 +225,7 @@ nav{
 		}
 		p{
 			font-size: 16px;
-			line-height: 26px;
+			line-height: 24px;
 			margin: 20px 0;
 		}
 		.about-tech-usage{
@@ -300,8 +300,8 @@ nav{
 				padding: 1.2em;
 				margin-bottom: 1em;
 				border-radius: .1em;
-				font-size: .9em;
-				line-height: 1.6em;
+				font-size: .95em;
+				line-height: 1.45em;
 			}
 			.tech-use{
 				width: 70%;
@@ -475,8 +475,8 @@ nav{
 		padding: 1em;
 		text-align: center;
 		.youtube-info{
-			font-size: 16px;
-			line-height: 26px;
+			font-size: 1em;
+			line-height: 1.5em;
 			.tech-youtube-use{
 				font-family: $font-unique;
 				font-size: 15px;
@@ -515,7 +515,7 @@ nav{
 		width: 60%;
 		margin: 0 auto;
 		font-size: 1em;
-		line-height: 1.6em;
+		line-height: 1.5em;
 	}.social-media-contact{
 		display: none;
 	}
