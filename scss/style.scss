@@ -178,9 +178,9 @@ nav{
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	// min-height: 100vh;
 	padding-top: 12em;
-	// background-color: maroon;
+	padding-bottom: 6em;
 	h5{
 		font-family: $font-unique;
 		color: $secondary-color;
