@@ -235,9 +235,13 @@ nav {
       width: 100%;
       display: flex;
       align-items: center;
+      position: relative;
       img {
         width: 100%;
       }
+    }
+    .about-image:hover .image-shadow {
+      opacity: 0;
     }
   }
 }
@@ -264,17 +268,6 @@ nav {
         object-fit: cover;
         border-radius: 3px;
       }
-    }
-    .image-shadow {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: #0a192f;
-      opacity: 0.6;
-      border-radius: 3px;
-      transition: 0.2s;
     }
     .image-project:hover .image-shadow {
       opacity: 0;
@@ -434,16 +427,17 @@ nav {
 
 // Featured Project
 #featured-project {
-  padding: 6em 0;
-  // background-color: maroon;
+  padding: 5em 0;
   .video-wrapper {
     width: 100%;
     text-align: center;
-    margin-bottom: 1em;
+    h3 {
+      margin-bottom: 40px;
+    }
     iframe {
       border: none;
-      width: 80%;
-      height: 450px;
+      width: 60%;
+      height: 350px;
     }
   }
   .featured-project-info {
@@ -452,19 +446,12 @@ nav {
     padding: 1em;
     text-align: center;
     .youtube-info {
-      font-size: 1em;
-      line-height: 1.5em;
       .tech-youtube-use {
-        font-family: $font-unique;
-        font-size: 15px;
-        line-height: 25px;
-        margin: 2em 0;
-        color: $darker-font-primary-color;
-      }
-      ul {
-        li {
+        p {
+          margin: 10px 0;
           font-size: 0.9em;
           font-family: $font-unique;
+          color: $darker-font-primary-color;
         }
       }
     }
@@ -473,6 +460,7 @@ nav {
 
 // Contact
 #contact {
+  padding: 5em 0 7em;
   text-align: center;
   .contact-little-title {
     font-family: $font-unique;
@@ -483,8 +471,7 @@ nav {
   .contact-info {
     width: 60%;
     margin: 0 auto;
-    font-size: 1em;
-    line-height: 1.5em;
+    margin-bottom: 20px;
   }
   .social-media-contact {
     display: none;

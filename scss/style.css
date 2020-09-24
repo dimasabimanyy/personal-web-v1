@@ -82,6 +82,18 @@ h6 {
   font-family: "Roboto Mono", monospace;
 }
 
+.image-shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #0a192f;
+  opacity: 0.6;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+
 .social-media-icon {
   display: flex;
   flex-direction: column;
@@ -331,10 +343,15 @@ nav .toggle .line3 {
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 #about .about-wrapper .about-image img {
   width: 100%;
+}
+
+#about .about-wrapper .about-image:hover .image-shadow {
+  opacity: 0;
 }
 
 #work {
@@ -364,18 +381,6 @@ nav .toggle .line3 {
   width: 100%;
   object-fit: cover;
   border-radius: 3px;
-}
-
-#work .project-wrap .image-shadow {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #0a192f;
-  opacity: 0.6;
-  border-radius: 3px;
-  transition: 0.2s;
 }
 
 #work .project-wrap .image-project:hover .image-shadow {
@@ -558,19 +563,22 @@ nav .toggle .line3 {
 }
 
 #featured-project {
-  padding: 6em 0;
+  padding: 5em 0;
 }
 
 #featured-project .video-wrapper {
   width: 100%;
   text-align: center;
-  margin-bottom: 1em;
+}
+
+#featured-project .video-wrapper h3 {
+  margin-bottom: 40px;
 }
 
 #featured-project .video-wrapper iframe {
   border: none;
-  width: 80%;
-  height: 450px;
+  width: 60%;
+  height: 350px;
 }
 
 #featured-project .featured-project-info {
@@ -580,25 +588,15 @@ nav .toggle .line3 {
   text-align: center;
 }
 
-#featured-project .featured-project-info .youtube-info {
-  font-size: 1em;
-  line-height: 1.5em;
-}
-
-#featured-project .featured-project-info .youtube-info .tech-youtube-use {
+#featured-project .featured-project-info .youtube-info .tech-youtube-use p {
+  margin: 10px 0;
+  font-size: 0.9em;
   font-family: "Roboto Mono", monospace;
-  font-size: 15px;
-  line-height: 25px;
-  margin: 2em 0;
   color: #8892b0;
 }
 
-#featured-project .featured-project-info .youtube-info ul li {
-  font-size: 0.9em;
-  font-family: "Roboto Mono", monospace;
-}
-
 #contact {
+  padding: 5em 0 7em;
   text-align: center;
 }
 
@@ -612,8 +610,7 @@ nav .toggle .line3 {
 #contact .contact-info {
   width: 60%;
   margin: 0 auto;
-  font-size: 1em;
-  line-height: 1.5em;
+  margin-bottom: 20px;
 }
 
 #contact .social-media-contact {
