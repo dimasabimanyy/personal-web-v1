@@ -350,7 +350,6 @@ nav .toggle .line3 {
   display: flex;
   position: relative;
   flex-wrap: wrap;
-  margin-bottom: 7em;
 }
 
 #work .project-wrap .image-project {
@@ -465,40 +464,37 @@ nav .toggle .line3 {
   justify-content: flex-start;
 }
 
+#work .main-project-1,
+#work .main-project-2 {
+  margin-bottom: 6em;
+}
+
 #noteworthy-project {
-  padding: 3em 0;
+  padding: 5em 0;
 }
 
-#noteworthy-project h6 {
+#noteworthy-project h3 {
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 40px;
 }
 
-#noteworthy-project h6 a {
-  font-size: 1.3em;
-  font-family: "Roboto Mono", monospace;
-  color: #41fbda;
-  font-style: normal;
-  text-decoration: underline;
-}
-
-#noteworthy-project h6 a:hover {
-  text-decoration: none;
-  color: #4adfc3;
+#noteworthy-project button {
+  margin: 0 auto;
+  display: flex;
+  align-self: center;
 }
 
 #noteworthy-project .project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  gap: 1em;
+  row-gap: 2em;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #noteworthy-project .project-container .project-box {
-  width: 32%;
   padding: 3em 1.7em;
   background-color: #172a45;
   transition: 0.2s ease-in;
-  margin: 1em 0;
 }
 
 #noteworthy-project .project-container .project-box .noteworthy-project-link {
@@ -528,6 +524,8 @@ nav .toggle .line3 {
 
 #noteworthy-project .project-container .project-box .noteworthy-project-title {
   margin-bottom: 1em;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 #noteworthy-project .project-container .project-box .noteworthy-project-title a {
